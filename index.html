@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <!-- Not good practice! You should load jQuery at the end of the document. -->
+        <title>Project UAS</title>
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" type="text/css "href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <!-- URL_API : https://358wt7ug67.execute-api.us-east-1.amazonaws.com/cors1 -->
+
+
+    <body>
+
+        <h2><center>DATA MAHASISWA</center></h2>
+        <ul id="pengajars"></ul>
+        <br>
+      <div class="container">
+        <table class="table table-striped" id="table_mhs">
+          <thead>
+            <tr>
+              <th scope="col">NIM</th>
+              <th scope="col">Naman Mahasiswa</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+<!--
+        <h4> Tambah Pengajar </h4>
+        <p> firstname : <input type="text" id="first"> </p>
+        <p> lastname : <input type="text" id="last"> </p>
+        <button id="add-pengajar"> Tambah </button>
+        <br> -->
+
+        <br>
+
+        <div class="container">
+          <h2>Tambah Data Mahasiswa</h2>
+
+            <div class="form-group">
+              <label>NIM</label>
+              <input type="text" class="form-control" id="first" placeholder="Enter here">
+            </div>
+            <div class="form-group">
+              <label>Nama Mahasiswa</label>
+              <input type="text" class="form-control" id="last" placeholder="Enter here">
+            </div>
+            <!-- <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+            </div> -->
+            <button class="btn btn-default" id="addP">Tambah</button>
+
+        </div>
+
+
+
+        <script src="main.js"></script>
+        <script src="write.js"></script>
+        <!-- <script type="text/javascript">
+            var API_URL = 'https://358wt7ug67.execute-api.us-east-1.amazonaws.com/cors1/authors/';
+            var $orders = $ ('orders');
+
+            // TEMPLATE
+            // $(function (){
+            //   $.ajax({
+            //     type:  'GET',
+            //     url: API_URL,
+            //     success: function(data) {
+            //       console.log('success', data)
+            //     }
+            //   });
+            // });
+
+            $(function (){
+              $.ajax({
+                type:  'GET',
+                url: API_URL,
+                success: function(data) {
+                  $.each(orders, function(i, order) {
+                    $orders.append('<li>name:</li>');
+                  });
+                }
+              });
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // $(document).ready(function(){
+            //     $.ajax({
+            //         type: "GET",
+            //         url: API_URL,
+            //         success: function(data){
+            //             $('#entries').html('');
+            //
+            //             data.Items.forEach(function(guestbookEntry){
+            //                 $('#entries').append('<p>' + firstName + '</p>');
+            //             });
+            //         }
+            //     });
+            // });
+            //
+            // $('#submitButton').on('click', function(){
+            //     $.ajax({
+            //         type: "POST",
+            //         url: API_URL,
+            //         data: JSON.stringify({ "message": $('#msg').val()}),
+            //         contentType: "application/json",
+            //         success: function(data){
+            //             location.reload();
+            //         }
+            //     });
+            //
+            //     return false;
+            // });
+        </script> -->
+    </body>
+</html>
