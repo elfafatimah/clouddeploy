@@ -1,13 +1,10 @@
 <html>
     <head>
         <!-- Not good practice! You should load jQuery at the end of the document. -->
-        <title>Project UAS</title>
+        <title>Project Akhir</title>
         <!-- <link rel="stylesheet" href="styles.css"> -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-         <link rel="stylesheet" type="text/css "href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
 
     <!-- URL_API : https://358wt7ug67.execute-api.us-east-1.amazonaws.com/cors1 -->
@@ -15,15 +12,15 @@
 
     <body>
 
-        <h2><center>DATA MAHASISWA</center></h2>
-        <ul id="pengajars"></ul>
+        <h1><center><b>DATA MAHASISWA FILKOM UB</b></center></h1>
         <br>
+
       <div class="container">
-        <table class="table table-striped" id="table_mhs">
+        <table class="table table-bordered" id="datamahasiswa">
           <thead>
             <tr>
-              <th scope="col">NIM</th>
-              <th scope="col">Naman Mahasiswa</th>
+              <th>NIM</th>
+              <th>NAMA MAHASISWA</th>
             </tr>
           </thead>
           <tbody>
@@ -31,30 +28,24 @@
         </table>
       </div>
 
-<!--
-        <h4> Tambah Pengajar </h4>
-        <p> firstname : <input type="text" id="first"> </p>
-        <p> lastname : <input type="text" id="last"> </p>
-        <button id="add-pengajar"> Tambah </button>
-        <br> -->
 
         <br>
+        <br>
 
-        <div class="container">
-          <h2>Tambah Data Mahasiswa</h2>
+      <div class="container">
+      <h3><b>Tambah Data Mahasiswa</b></h3>
 
             <div class="form-group">
               <label>NIM</label>
-              <input type="text" class="form-control" id="first" placeholder="Enter here">
+              <input type="text" class="form-control" id="nim" placeholder="Masukan Nim">
             </div>
             <div class="form-group">
-              <label>Nama Mahasiswa</label>
-              <input type="text" class="form-control" id="last" placeholder="Enter here">
+              <label>NAMA MAHASISWA</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama Mahasiswa">
             </div>
-            <!-- <div class="checkbox">
-              <label><input type="checkbox" name="remember"> Remember me</label>
-            </div> -->
-            <button class="btn btn-default" id="addP">Tambah</button>
+            
+            <button class="btn btn-danger" id="addB">Batal</button>
+            <button class="btn btn-primary" id="addT">Tambah</button>
 
         </div>
 
